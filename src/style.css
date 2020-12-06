@@ -9,35 +9,21 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 14px;
   font-family: "Quicksand", sans-serif;
-  color: #1a1d26;
   font-weight: 600;
 }
-h1 {
-  font-family: "Inter", sans-serif;
-  background-color: aliceblue;
-  background-image: linear-gradient(#ffffff, #cfe1fd 50%, #93bcff);
-  text-shadow: none;
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  font-weight: 700;
-}
 .weather-app-wrapper {
-  max-width: 325px;
+  max-width: 300px;
   margin: 50px auto;
   font-size: 14px;
 }
 
 .card {
-  padding: 20px;
-  border: 1px solid #fff;
-  background-image: linear-gradient(#ffffff, #fbfbfddc);
+  padding: 30px 20px;
+  border: 1px none #fff;
+  background-image: linear-gradient(#ffffff, 75%, #eaeaf1b3);
   border-radius: 30px;
+  box-shadow: 0px 12px 16px #e7eaef;
 }
 .city-day {
   line-height: 20px;
@@ -46,16 +32,17 @@ h1 {
 
 .city-headline {
   font-size: 20px;
+  color: #3a3b3efa;
 }
 .day-headline {
   font-size: 12px;
   color: #bfc0c3;
 }
 .hours {
-  font-size: 50px;
+  font-size: 48px;
   font-family: "Inter", sans-serif;
   background-color: aliceblue;
-  background-image: linear-gradient(#ffffff, #cfe1fd 50%, #93bcff);
+  background-image: linear-gradient(#ffffff, #cfe1fd 0%, #93bcff);
   text-shadow: none;
   background-size: 100%;
   background-repeat: repeat;
@@ -73,23 +60,23 @@ h1 {
   border-radius: 25px;
   background-image: linear-gradient(#aecdff, #5896fd);
   box-shadow: 0px 12px 16px #aecdff;
-  margin: 40px 0 30px 0;
-  padding: 18px 10px;
+  margin: 40px 0 27px 0px;
+  padding: 20px 10px 0 10px;
 }
 .main-weather-icon {
-  height: 170px;
-  width: 170px;
+  height: 160px;
+  width: 160px;
   position: absolute;
-  bottom: 3px;
-  right: -10px;
+  bottom: 27px;
+  right: -4px;
 }
 .main-icon-description {
-  margin-top: 65px;
-  font-size: 16px;
+  margin-top: 55px;
+  font-size: 18px;
   color: #fff;
 }
 .current-deegre {
-  font-size: 70px;
+  font-size: 65px;
   font-family: "Inter", sans-serif;
   background-color: aliceblue;
   background-image: linear-gradient(#ffffff, #cfe1fd 64%, #93bcff);
@@ -105,17 +92,27 @@ h1 {
 }
 .main-deegre-units {
   position: relative;
-  font-size: 18px;
-  right: -82px;
+  font-size: 15px;
+  right: -75px;
   bottom: 51px;
   color: #fff;
   font-family: "Quicksand", sans-serif;
 }
 .feels-like {
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
-  top: -12px;
+  top: -5px;
+}
+.feels-like-unit {
+  font-size: 9px;
+  position: relative;
+  top: -23px;
+  left: 86px;
+}
+.description {
+  margin-right: -15px;
+  margin-left: -20px;
 }
 .wind-box {
   border: 1px none;
@@ -127,8 +124,8 @@ h1 {
   padding: 5px;
   width: 60px;
   height: 55px;
-  background-color: #e5e5ef;
-  box-shadow: 0px 6px 30px #dcdce2;
+  background-color: #aecdffa8;
+  box-shadow: 3px 3px 16px #aecdff;
 }
 .second-desc-style {
   font-size: 11px;
@@ -144,8 +141,8 @@ h1 {
   padding: 5px;
   width: 80px;
   height: 55px;
-  background-color: #e5e5ef;
-  box-shadow: 0px 6px 30px #dcdce2;
+  background-color: #aecdffa8;
+  box-shadow: 3px 3px 16px #aecdff;
 }
 .humidity-box {
   border: 1px none;
@@ -157,12 +154,56 @@ h1 {
   padding: 5px;
   width: 60px;
   height: 55px;
-  background-color: #e5e5ef;
-  box-shadow: 0px 6px 30px #dcdce2;
+  background-color: #aecdffa8;
+  box-shadow: 3px 3px 16px #aecdff;
 }
 .fa-tint {
   color: #806ef8;
 }
 .fa-wind {
   color: #5896fd;
+}
+.five-days-headline {
+  font-size: 20px;
+  margin: 20px 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  color: #3a3b3efa;
+}
+
+.prediction-icon {
+  height: 40px;
+}
+.pred-units {
+  font-size: 8px;
+  position: relative;
+  bottom: 6px;
+  left: -2px;
+}
+.pred-style {
+  border: 1px none;
+  border-radius: 20px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  height: 95px;
+  background-color: #fff;
+  color: #bfc0c3;
+}
+.row-cols-5 {
+  margin-right: -12px;
+  margin-left: -5px;
+}
+.col {
+  padding: 0;
+}
+.signuture {
+  margin-top: 15px;
+}
+
+.pred-style:hover {
+  background-image: linear-gradient(#b0a4ff, #806ef8);
+  color: #fff;
+  box-shadow: 0px 3px 20px #806ef8;
 }
