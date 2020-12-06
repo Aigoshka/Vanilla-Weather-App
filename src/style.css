@@ -117,3 +117,52 @@ h1 {
   position: relative;
   top: -12px;
 }
+.wind-box {
+  border: 1px none;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 15px;
+  position: relative;
+  left: 20px;
+  padding: 5px;
+  width: 60px;
+  height: 55px;
+  background-color: #e5e5ef;
+  box-shadow: 0px 6px 30px #dcdce2;
+}
+.second-desc-style {
+  font-size: 11px;
+  color: #3a3b3efa;
+}
+.perc-box {
+  border: 1px none;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 15px;
+  position: relative;
+  left: -4px;
+  padding: 5px;
+  width: 80px;
+  height: 55px;
+  background-color: #e5e5ef;
+  box-shadow: 0px 6px 30px #dcdce2;
+}
+.humidity-box {
+  border: 1px none;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 15px;
+  position: relative;
+  left: -9px;
+  padding: 5px;
+  width: 60px;
+  height: 55px;
+  background-color: #e5e5ef;
+  box-shadow: 0px 6px 30px #dcdce2;
+}
+.fa-tint {
+  color: #806ef8;
+}
+.fa-wind {
+  color: #5896fd;
+}
