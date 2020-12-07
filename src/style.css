@@ -19,15 +19,15 @@ li {
 }
 
 .card {
-  padding: 30px 20px;
-  border: 1px none #fff;
-  background-image: linear-gradient(#ffffff, 75%, #eaeaf1b3);
+  padding: 25px 20px;
+  border: 6px solid #adb5bd85;
+  background-image: linear-gradient(#ffffff, 40%, #eaeaf1b3);
   border-radius: 30px;
   box-shadow: 0px 12px 16px #e7eaef;
 }
 .city-day {
   line-height: 20px;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .city-headline {
@@ -39,7 +39,7 @@ li {
   color: #bfc0c3;
 }
 .hours {
-  font-size: 48px;
+  font-size: 46px;
   font-family: "Inter", sans-serif;
   background-color: aliceblue;
   background-image: linear-gradient(#ffffff, #cfe1fd 0%, #93bcff);
@@ -64,15 +64,16 @@ li {
   padding: 20px 10px 0 10px;
 }
 .main-weather-icon {
-  height: 160px;
-  width: 160px;
+  height: 155px;
+  width: 155px;
   position: absolute;
-  bottom: 27px;
-  right: -4px;
+  bottom: 30px;
+  right: -10px;
 }
 .main-icon-description {
   margin-top: 55px;
-  font-size: 18px;
+  margin-left: -10px;
+  font-size: 17px;
   color: #fff;
 }
 .current-deegre {
@@ -92,7 +93,7 @@ li {
 }
 .main-deegre-units {
   position: relative;
-  font-size: 15px;
+  font-size: 13px;
   right: -75px;
   bottom: 51px;
   color: #fff;
@@ -103,6 +104,7 @@ li {
   font-size: 14px;
   position: relative;
   top: -5px;
+  right: 7px;
 }
 .feels-like-unit {
   font-size: 9px;
@@ -119,13 +121,14 @@ li {
   border-radius: 8px;
   text-align: center;
   position: relative;
-  left: 7px;
-  padding: 10px 0;
+  left: 15px;
+  padding: 8px 0;
   width: 54px;
   background-color: #aecdffa8;
   box-shadow: 3px 3px 16px #aecdff;
   text-align: center;
   margin-bottom: 6px;
+  margin-top: 1px;
 }
 .second-desc-style {
   font-size: 11px;
@@ -137,26 +140,38 @@ li {
   border-radius: 8px;
   text-align: center;
   position: relative;
-  left: 7px;
-  padding: 10px 0;
+  left: 22px;
+  padding: 8px 0;
   width: 54px;
   background-color: #aecdffa8;
   box-shadow: 3px 3px 16px #aecdff;
   text-align: center;
   margin-bottom: 6px;
+  margin-top: 1px;
 }
 .humidity-box {
   border: 1px none;
   border-radius: 8px;
   text-align: center;
   position: relative;
-  left: 7px;
-  padding: 10px 0;
+  left: 15px;
+  padding: 8px 0;
   width: 54px;
   background-color: #aecdffa8;
   box-shadow: 3px 3px 16px #aecdff;
   text-align: center;
   margin-bottom: 6px;
+  margin-top: 1px;
+}
+.wind-col {
+  padding-right: 0;
+}
+.perc-col {
+  padding-right: 0;
+  padding-left: 0;
+}
+.humidity-col {
+  padding-left: 0;
 }
 .fa-tint {
   color: #806ef8;
@@ -168,7 +183,7 @@ li {
 }
 .five-days-headline {
   font-size: 20px;
-  margin: 20px 0;
+  margin: 20px 0 15px 0;
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
   font-family: "Quicksand", sans-serif;
@@ -176,18 +191,26 @@ li {
 }
 
 .prediction-icon {
-  height: 40px;
+  height: 54px;
+  position: relative;
+  right: 7px;
+  top: -8px;
+}
+.first-day-pred {
+  position: relative;
+  bottom: 23px;
+  right: -2px;
 }
 .pred-units {
-  font-size: 8px;
+  font-size: 9px;
   position: relative;
-  bottom: 6px;
-  left: -2px;
+  bottom: 7px;
+  left: 1px;
 }
 .pred-style {
   border: 1px none;
   border-radius: 20px;
-  width: 50px;
+  width: 45px;
   text-align: center;
   padding: 5px;
   height: 95px;
