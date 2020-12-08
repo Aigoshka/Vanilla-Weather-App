@@ -75,6 +75,7 @@ li {
   margin-left: -10px;
   font-size: 17px;
   color: #fff;
+  text-transform: capitalize;
 }
 .current-deegre {
   font-size: 65px;
@@ -173,13 +174,17 @@ li {
 .humidity-col {
   padding-left: 0;
 }
-.fa-tint {
+.fa-tint,
+.fa-temperature-high,
+.fa-wind {
   color: #806ef8;
   font-size: 25px;
 }
 .fa-wind {
   color: #5896fd;
-  font-size: 25px;
+}
+.fa-temperature-high {
+  color: #de6565;
 }
 .five-days-headline {
   font-size: 20px;
