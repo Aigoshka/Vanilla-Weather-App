@@ -1,6 +1,6 @@
 let now = new Date ();
 function formatHour (date){
-let hour = date.getHours();
+let hour = (date.getHours() < 10 ? "0" : "") + date.getHours();
 let minute = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
 formatHour =`${hour}:${minute}`;
 return formatHour;
@@ -55,8 +55,20 @@ iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data
 iconElement.setAttribute("alt",response.data.weather[0].description);
 }
 
+function search (city){
 
-let apiKey ="f36e45e370221a0b671266843fbab2eb";
-let city ="Berlin";
-let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(displayTemperature);
+    let apiKey ="f36e45e370221a0b671266843fbab2eb";
+    let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayTemperature);
+}
+
+function handelSubmit (event){
+    event.preventDefault ();
+    let searchTextInput =document.querySelector("#search-text-input");
+    search (searchTextInput.value);
+}
+search("Prague");
+
+//search form
+let form =document.querySelector("#search-form");
+form.addEventListener("submit", handelSubmit);
