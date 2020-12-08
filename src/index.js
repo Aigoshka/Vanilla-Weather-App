@@ -1,8 +1,9 @@
-function formatHour (timestamp){
-  let date = new Date (timestamp);
-    let hour = date.getHours();
-  let minute = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
-  return `${hour}:${minute}`
+let now = new Date ();
+function formatHour (date){
+let hour = date.getHours();
+let minute = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
+formatHour =`${hour}:${minute}`;
+return formatHour;
 }
 function formatDate(timestamp){
     let months = [
@@ -29,10 +30,7 @@ return formatDate;
   
 }
 
-
-
 function displayTemperature(response){
-    console.log (response.data);
 let temperatureElement =document.querySelector("#current-temp");
 let cityElement =document.querySelector("#city");
 let descriptionElement =document.querySelector("#current-desc");
@@ -42,6 +40,8 @@ let pressureElement =document.querySelector("#pressure");
 let feelsElement =document.querySelector("#feels-like-deegre");
 let dateElement=document.querySelector("#date");
 let hourElement=document.querySelector("#current-hour");
+let iconElement=document.querySelector("#icon");
+
 temperatureElement.innerHTML=Math.round(response.data.main.temp);
 cityElement.innerHTML=response.data.name;
 descriptionElement.innerHTML=response.data.weather[0].description;
@@ -50,10 +50,13 @@ windElement.innerHTML=response.data.wind.speed;
 pressureElement.innerHTML=Math.round(response.data.main.temp_max);
 feelsElement.innerHTML=Math.round(response.data.main.feels_like);
 dateElement.innerHTML=formatDate (response.data.dt*1000);
-hourElement.innerHTML=formatHour (response.data.dt*1000);
+hourElement.innerHTML=formatHour (now);
+iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+iconElement.setAttribute("alt",response.data.weather[0].description);
 }
 
 
 let apiKey ="f36e45e370221a0b671266843fbab2eb";
-let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=prague&appid=${apiKey}&units=metric`;
+let city ="Berlin";
+let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
