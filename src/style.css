@@ -12,6 +12,30 @@ li {
   font-family: "Quicksand", sans-serif;
   font-weight: 600;
 }
+button {
+  margin-bottom: 6px;
+  margin-right: 10px;
+  
+}
+.form-control {
+  max-width: 155px;
+  margin-left: 15px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: 2px solid #adb5bd85;
+  box-shadow: 3px 3px 10px #e7eaef;
+}
+.form-inline {
+  margin-bottom: 15px;
+}
+.btn-primary {
+  background-color: #aecdff;
+  border-color: seashell;
+  color: #806ef8;
+  margin-right: 5px;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
 .weather-app-wrapper {
   max-width: 300px;
   margin: 50px auto;
@@ -60,7 +84,7 @@ li {
   border-radius: 25px;
   background-image: linear-gradient(#aecdff, #5896fd);
   box-shadow: 0px 12px 16px #aecdff;
-  margin: 40px 0 27px 0px;
+  margin: 35px 0 30px 0px;
   padding: 20px 10px 0 10px;
 }
 .main-weather-icon {
@@ -238,3 +262,7 @@ li {
   color: #fff;
   box-shadow: 0px 3px 20px #806ef8;
 }
+.btn-primary:hover {
+  color: #fff;
+  background-color: #5896fd;
+  border-color: seashell;
