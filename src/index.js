@@ -69,6 +69,19 @@ function handelSubmit (event){
 }
 search("Prague");
 
+function showPosition(position) {
+  let apiKey = "f36e45e370221a0b671266843fbab2eb";
+  let apiGeoLocation = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiGeoLocation).then(actualTemperature);
+}
+function geoPlace(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
 //search form
 let form =document.querySelector("#search-form");
 form.addEventListener("submit", handelSubmit);
+
+//geoLocation
+let geoButton = document.querySelector("#geo-loc");
+geoButton.addEventListener("click", geoPlace);

@@ -85,14 +85,13 @@ button {
   background-image: linear-gradient(#aecdff, #5896fd);
   box-shadow: 0px 12px 16px #aecdff;
   margin: 35px 0 30px 0px;
-  padding: 20px 10px 0 10px;
+  padding: 20px 10px 20px 10px;
 }
 .main-weather-icon {
-  height: 155px;
-  width: 155px;
-  position: absolute;
-  bottom: 30px;
-  right: -10px;
+    width: 150px;
+    position: absolute;
+    bottom: -1px;
+    right: 3px;
 }
 .main-icon-description {
   margin-top: 55px;
@@ -102,7 +101,7 @@ button {
   text-transform: capitalize;
 }
 .current-deegre {
-  font-size: 42px;
+  font-size: 58px;
   font-family: "Inter", sans-serif;
   background-color: aliceblue;
   background-image: linear-gradient(#ffffff, #cfe1fd 64%, #93bcff);
@@ -114,22 +113,21 @@ button {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   font-weight: 600;
-  line-height: 53px;
+  line-height: 30px;
 }
 .main-deegre-units {
-  position: relative;
-  font-size: 13px;
-  right: -75px;
-  bottom: 51px;
+  position: absolute;
+  top: -8px;
+  font-size: 11px;
   color: #fff;
   font-family: "Quicksand", sans-serif;
 }
 .feels-like {
-  color: #fff;
-  font-size: 13px;
-  position: relative;
-  top: -5px;
-  right: 7px;
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+    top: 17px;
+    right: 4px;
 }
 .feels-like-unit {
   font-size: 9px;
