@@ -154,7 +154,7 @@ button {
   border-radius: 8px;
   text-align: center;
   position: relative;
-  left: 21px;
+  left: 26px;
   padding: 8px 0;
   width: 54px;
   background-color: #aecdffa8;
@@ -164,7 +164,7 @@ button {
   margin-top: 1px;
 }
 .wind-box {
-  left: 15px;
+  left: 20px;
 }
 .second-desc-style {
   font-size: 11px;
@@ -172,7 +172,7 @@ button {
   text-align: center;
 }
 .humidity-box {
-  left: 11px;
+  left: 15px;
 }
 .wind-col {
   padding-right: 0;
