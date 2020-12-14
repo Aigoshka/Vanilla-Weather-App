@@ -67,7 +67,6 @@ nameForecast();
 
 
 function displayTemperature(response){
-    console.log(response.data);
 let temperatureElement =document.querySelector("#current-temp");
 let cityElement =document.querySelector("#city");
 let descriptionElement =document.querySelector("#current-desc");
@@ -174,3 +173,4 @@ currentTempElement.innerHTML=Math.round(fahrenheitTemperature);
 }
 let temperatureF = document.querySelector("#fahrenheit");
 temperatureF.addEventListener("click", showTemperatureF);
+
