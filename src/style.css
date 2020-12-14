@@ -37,13 +37,13 @@ button {
   border-radius: 10px;
 }
 .weather-app-wrapper {
-  max-width: 320px;
+  max-width: 330px;
   margin: 50px auto;
   font-size: 14px;
 }
 
 .card {
-  padding: 25px 17px;
+  padding: 25px 20px;
   border: 6px solid #adb5bd85;
   background-image: linear-gradient(#ffffff, 40%, #eaeaf1b3);
   border-radius: 30px;
@@ -90,7 +90,7 @@ button {
 .main-weather-icon {
   width: 150px;
   position: absolute;
-  bottom: 11px;
+  bottom: 16px;
   right: 3px;
 }
 .main-icon-description {
